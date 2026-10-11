@@ -1,13 +1,47 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
-  <script src="js/index.js"></script>
-  <title>Index html </title>
+  <title>Bright's Tech</title>
+  <style>
+    body {
+      background-color: lightblue;
+      text-align: center;
+      font-family: Arial;
+      padding: 30px;
+    }
+
+    h1 {
+      color: darkblue;
+    }
+
+    button {
+      background-color: green;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
-	<h1>Index html </h1>
+
+  <h1>Welcome to Bright's Tech</h1>
+
+  <p>I am learning to become a developer.</p>
+
+  <button onclick="showMessage()">
+    Contact Me
+  </button>
+
+  <p id="message"></p>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").innerHTML =
+        "Thank you for visiting Bright's Tech!";
+    }
+  </script>
+
 </body>
 </html>
